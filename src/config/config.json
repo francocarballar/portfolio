@@ -1,0 +1,26 @@
+{
+  "site": {
+    "title": "Franco Carballar",
+    "base_url": "https://francocarballar.com/",
+    "base_path": "/",
+    "favicon": "/favicons/favicon.ico",
+    "apple_icon": "/favicons/apple-touch-icon.png",
+    "logo": "https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/logo/tatrlwlxcjkny2tokizv",
+    "lang": "es",
+    "description": "Desarrollador web fullstack con experiencia en JavaScript, Node, TypeScript, React, Next, TailwindCSS, Express, SQL, CSS, HTML, Astro y Firebase. Portfolio de proyectos de programación frontend y backend.",
+    "pageSize": 6
+  },
+  "features": {
+    "youtube": false,
+    "dark_mode": true
+  },
+  "metadata": {
+    "meta_author": "Franco Carballar @francocarballar",
+    "meta_description": "Desarrollador web fullstack con experiencia en JavaScript, Node, TypeScript, React, Next, TailwindCSS, Express, SQL, CSS, HTML, Astro y Firebase. Portfolio de proyectos de programación frontend y backend."
+  },
+  "author": {
+    "name": "Franco Carballar @francocarballar",
+    "avatar": "https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/profile-picture/francocarballar",
+    "bio": "Desarrollador web fullstack con experiencia en JavaScript, Node, TypeScript, React, Next, TailwindCSS, Express, SQL, CSS, HTML, Astro y Firebase. Portfolio de proyectos de programación frontend y backend."
+  }
+}
