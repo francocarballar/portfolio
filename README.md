@@ -120,12 +120,15 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 ├── public/
 │   └── assets/
 │   └── favicons/
+│   └── pdf/
 │   └── favicon.svg
 │   └── humans.txt
 ├── scripts/
 │   └── production.js
 ├── src/
 │   ├── components/
+│   │    └── AboutMe.astro
+│   │    └── CTA.astro
 │   │    └── Header.astro
 │   │    └── MenuItems.astro
 │   │    └── SocialMedia.astro
@@ -133,6 +136,8 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 │   │    └── config.json
 │   │    └── menu.json
 │   │    └── social.json
+│   ├── content/
+│   │    └── about.md
 │   ├── icons/
 │   │    └── CloseIcon.astro
 │   │    └── HaburgerIcon.astro
@@ -146,6 +151,7 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 │   ├── styles/
 │   │    └── global.css
 │   ├── types/
+│   │    └── about.d.ts
 │   │    └── menu.d.ts
 │   ├── utils/
 │   │    └── createOgImage.ts

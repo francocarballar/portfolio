@@ -120,12 +120,15 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 ├── public/
 │   └── assets/
 │   └── favicons/
+│   └── pdf/
 │   └── favicon.svg
 │   └── humans.txt
 ├── scripts/
 │   └── production.js
 ├── src/
 │   ├── components/
+│   │    └── AboutMe.astro
+│   │    └── CTA.astro
 │   │    └── Header.astro
 │   │    └── MenuItems.astro
 │   │    └── SocialMedia.astro
@@ -133,6 +136,8 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 │   │    └── config.json
 │   │    └── menu.json
 │   │    └── social.json
+│   ├── content/
+│   │    └── about.md
 │   ├── icons/
 │   │    └── CloseIcon.astro
 │   │    └── HaburgerIcon.astro
@@ -146,6 +151,7 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 │   ├── styles/
 │   │    └── global.css
 │   ├── types/
+│   │    └── about.d.ts
 │   │    └── menu.d.ts
 │   ├── utils/
 │   │    └── createOgImage.ts
