@@ -1,0 +1,16 @@
+---
+import social from '@config/social.json'
+import { iconPaths } from '@icons/IconPaths'
+import Icon from '@icons/Icon.astro'
+---
+
+<ul class='flex flex-row items-center justify-center gap-3' data-justify='end'>
+  {
+    social?.networks.map(({ url, icon, name }) => (
+      <a href={url} class='text-3xl text-primary hover:text-white' target='_blank'>
+        <span class='sr-only'>{name}</span>
+        <Icon icon={icon as keyof typeof iconPaths} gradient={true} />
+      </a>
+    ))
+  }
+</ul>

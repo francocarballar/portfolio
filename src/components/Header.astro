@@ -1,0 +1,113 @@
+---
+import menu from '@config/menu.json'
+import Logo from '@icons/Logo.astro'
+import HamburgerIcon from '@icons/HamburgerIcon.astro'
+import CloseIcon from '@icons/CloseIcon.astro'
+import MenuItems from './MenuItems.astro'
+import SocialMedia from './SocialMedia.astro'
+---
+
+<header
+  class='relative z-40 flex w-full flex-row flex-nowrap items-center justify-between gap-4 px-10 py-5 md:px-12 md:py-7 lg:px-20 lg:py-10'>
+  <nav id='menu-content' class='flex w-full flex-row items-center justify-between'>
+    {/* Logo del sitio web */}
+    <a
+      aria-label='Home'
+      class='tap-highlight-transparent flex items-center justify-start gap-2 transition-opacity active:opacity-50'
+      href='/'>
+      <Logo width={60} height={60} />
+    </a>
+    {/* Items del la barra de navegación */}
+    <ul
+      class='text-md mx-auto hidden w-auto max-w-fit list-none items-center justify-start gap-4 rounded-full border-2 border-gray-800 bg-dark px-6 py-3 shadow-md shadow-gray-800 transition-all lg:flex'>
+      {menu?.main?.map(menu => <MenuItems name={menu.name} url={menu.url} />)}
+    </ul>
+
+    {/* Redes sociales */}
+    <div class='flex flex-row items-center justify-end gap-10'>
+      <div class='hidden w-full sm:flex'>
+        <SocialMedia />
+      </div>
+
+      {/* Iconos del menú despegable */}
+      <div class='flex lg:hidden'>
+        <input id='nav-toggle' type='checkbox' class='hidden' />
+        <label
+          id='show-button'
+          for='nav-toggle'
+          class='order-2 flex cursor-pointer items-center text-zinc-400 lg:hidden'>
+          <HamburgerIcon />
+        </label>
+
+        {/* Barra de navegación para dispositivos móviles */}
+        <div
+          id='nav-menu'
+          class='absolute right-0 top-0 z-10 mt-2 hidden h-screen w-screen items-start justify-end divide-y divide-zinc-100 rounded-md backdrop-blur-md transition-all'>
+          <div
+            class='flex min-h-full w-1/2 flex-col items-start justify-between border-gray-800 bg-dark p-6 text-white shadow-md shadow-gray-800'
+            id='nav'>
+            <div class='flex w-full flex-col items-start justify-start gap-6'>
+              <label
+                id='hide-button'
+                for='nav-toggle'
+                class='hidden w-full cursor-pointer flex-row items-center justify-end text-zinc-400'>
+                <CloseIcon />
+              </label>
+              <ul class='flex w-full flex-col items-start justify-start gap-3'>
+                {menu.main?.map(menu => <MenuItems name={menu.name} url={menu.url} />)}
+              </ul>
+            </div>
+            <SocialMedia />
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const navMenu = document.getElementById('nav-menu')
+  const nav = document.getElementById('nav')
+  const openMenu = document.getElementById('show-button')
+  const closeMenu = document.getElementById('hide-button')
+
+  const open = (): void => {
+    if (openMenu !== null && navMenu !== null && closeMenu !== null) {
+      openMenu.classList.remove('flex')
+      openMenu.classList.add('hidden')
+      closeMenu.classList.remove('hidden')
+      closeMenu.classList.add('flex')
+      navMenu.classList.remove('hidden')
+      navMenu.classList.add('flex')
+    }
+  }
+
+  const close = (): void => {
+    if (closeMenu !== null && navMenu !== null && openMenu !== null) {
+      closeMenu.classList.remove('flex')
+      closeMenu.classList.add('hidden')
+      openMenu.classList.remove('hidden')
+      openMenu.classList.add('flex')
+      navMenu.classList.remove('flex')
+      navMenu.classList.add('hidden')
+    }
+  }
+
+  const handleClickOutside = (e: MouseEvent) => {
+    if (e.target instanceof Node) {
+      if (openMenu?.contains(e.target)) {
+        open()
+      }
+
+      if (closeMenu?.contains(e.target)) {
+        close()
+      }
+
+      if (!nav?.contains(e.target) && e.target !== openMenu && !openMenu?.contains(e.target)) {
+        close()
+      }
+    }
+  }
+
+  document.addEventListener('mousedown', handleClickOutside)
+</script>

@@ -1,0 +1,24 @@
+{
+  "main": [
+    {
+      "name": "Inicio",
+      "url": "#home"
+    },
+    {
+      "name": "Experiencia",
+      "url": "#works"
+    },
+    {
+      "name": "Proyectos",
+      "url": "#projects"
+    },
+    {
+      "name": "Habilidades",
+      "url": "#skills"
+    },
+    {
+      "name": "Contacto",
+      "url": "#contact"
+    }
+  ]
+}

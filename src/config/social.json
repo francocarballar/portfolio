@@ -1,0 +1,19 @@
+{
+  "networks": [
+    {
+      "name": "Github",
+      "url": "https://github.com/francocarballar/",
+      "icon": "github-logo"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/francocarballa",
+      "icon": "twitter-logo"
+    },
+    {
+      "name": "Linkedin",
+      "url": "https://www.linkedin.com/in/francocarballar/",
+      "icon": "linkedin-logo"
+    }
+  ]
+}

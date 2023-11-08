@@ -1,8 +1,9 @@
 ---
+import '@styles/global.css'
 import config from '@config/config.json'
 import { createOgImage } from '@utils/createOgImage'
 import { ViewTransitions } from 'astro:transitions'
-import '@styles/global.css'
+import Header from '@components/Header.astro'
 
 export interface Props {
   title?: string
@@ -64,7 +65,8 @@ const ogImage = createOgImage({
     <link rel='manifest' href='/manifest.webmanifest' />
     <ViewTransitions />
   </head>
-  <body class='bg-dark min-h-screen text-white'>
+  <body class='min-h-screen bg-dark text-white'>
+    <Header />
     <main class='mx-auto max-w-screen-lg px-4 py-8 sm:px-6 sm:py-12 lg:px-8'>
       <slot />
     </main>
