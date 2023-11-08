@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --gradient-stop-1: #FD0D91;
-  --gradient-stop-2: #4412FF;
+  --gradient-stop-1: #fd0d91;
+  --gradient-stop-2: #4412ff;
 }
