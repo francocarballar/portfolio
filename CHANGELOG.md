@@ -1,3 +1,12 @@
+# [0.7.0](https://github.com/francocarballar/portfolio/compare/v0.6.1...v0.7.0) (2023-11-08)
+
+
+### Features
+
+* :sparkles: agrega la sección "about me" a la página web para contar un poco sobre mí ([82f371b](https://github.com/francocarballar/portfolio/commit/82f371b27b7c279baadb402e202c9d6067b5365b))
+
+
+
 ## [0.6.1](https://github.com/francocarballar/portfolio/compare/v0.6.0...v0.6.1) (2023-11-08)
 
 
