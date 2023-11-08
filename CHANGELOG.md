@@ -1,3 +1,12 @@
+## [0.6.1](https://github.com/francocarballar/portfolio/compare/v0.6.0...v0.6.1) (2023-11-08)
+
+
+### Bug Fixes
+
+* :bug: corrige la apariencia de la barra de navegación en dispositivos móviles ([c1d6714](https://github.com/francocarballar/portfolio/commit/c1d6714d1712677ac8d7ca344d9fd5fb95a7ce45))
+
+
+
 # [0.6.0](https://github.com/francocarballar/portfolio/compare/v0.5.0...v0.6.0) (2023-11-08)
 
 
