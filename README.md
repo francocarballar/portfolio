@@ -124,31 +124,45 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 ├── scripts/
 │   └── production.js
 ├── src/
+│   ├── components/
+│   │    └── Header.astro
+│   │    └── MenuItems.astro
+│   │    └── SocialMedia.astro
 │   ├── config/
 │   │    └── config.json
+│   │    └── menu.json
+│   │    └── social.json
+│   ├── icons/
+│   │    └── CloseIcon.astro
+│   │    └── HaburgerIcon.astro
+│   │    └── Icon.astro
+│   │    └── IconPaths.ts
+│   │    └── Logo.astro
 │   ├── layouts/
 │   │    └── Base.astro
 │   ├── pages/
 │   │    └── index.astro
 │   ├── styles/
 │   │    └── global.css
+│   ├── types/
+│   │    └── menu.d.ts
 │   ├── utils/
 │   │    └── createOgImage.ts
 │   │    └── manifest.ts
 │   │    └── slug.ts
 │   └── env.d.ts
-└── package.json
 └── .eslintignore
 └── .eslintrc.cjs
 └── .gitignore
 └── .prettierignore
 └── astro.config.mjs
+└── CHANGELOG.md
+└── LICENSE
 └── package.json
 └── pnpm-lock.yaml
 └── prettier.config.cjs
-└── CHANGELOG.md
-└── README.md
 └── README_EN.md
+└── README.md
 └── tailwind.config.cjs
 └── tsconfig.json
 ```

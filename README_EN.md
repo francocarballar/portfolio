@@ -114,41 +114,55 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 ```bash
 /
 ├── .vscode/
-│ └── extensions.json
-│ └── launch.json
-│ └── settings.json
+│   └── extensions.json
+│   └── launch.json
+│   └── settings.json
 ├── public/
-│ └── favicons/
-│ └── favicon.svg
-│ └── humans.txt
+│   └── favicons/
+│   └── favicon.svg
+│   └── humans.txt
 ├── scripts/
-│ └── production.js
+│   └── production.js
 ├── src/
-│ ├── config/
-│ │ └── config.json
-│ ├── layouts/
-│ │ └── Base.astro
-│ ├── pages/
-│ │ └── index.astro
-│ ├── styles/
-│ │ └── global.css
-│ ├── utils/
-│ │ └── createOgImage.ts
-│ │ └── manifest.ts
-│ │ └── slug.ts
-│ └── env.d.ts
-└── package.json
+│   ├── components/
+│   │    └── Header.astro
+│   │    └── MenuItems.astro
+│   │    └── SocialMedia.astro
+│   ├── config/
+│   │    └── config.json
+│   │    └── menu.json
+│   │    └── social.json
+│   ├── icons/
+│   │    └── CloseIcon.astro
+│   │    └── HaburgerIcon.astro
+│   │    └── Icon.astro
+│   │    └── IconPaths.ts
+│   │    └── Logo.astro
+│   ├── layouts/
+│   │    └── Base.astro
+│   ├── pages/
+│   │    └── index.astro
+│   ├── styles/
+│   │    └── global.css
+│   ├── types/
+│   │    └── menu.d.ts
+│   ├── utils/
+│   │    └── createOgImage.ts
+│   │    └── manifest.ts
+│   │    └── slug.ts
+│   └── env.d.ts
 └── .eslintignore
 └── .eslintrc.cjs
 └── .gitignore
 └── .prettierignore
 └── astro.config.mjs
+└── CHANGELOG.md
+└── LICENSE
 └── package.json
 └── pnpm-lock.yaml
 └── prettier.config.cjs
-└── CHANGELOG.md
-└── README.md
 └── README_EN.md
+└── README.md
 └── tailwind.config.cjs
 └── tsconfig.json
 ```
