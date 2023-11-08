@@ -118,6 +118,7 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 │   └── launch.json
 │   └── settings.json
 ├── public/
+│   └── assets/
 │   └── favicons/
 │   └── favicon.svg
 │   └── humans.txt

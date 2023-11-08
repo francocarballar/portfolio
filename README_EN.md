@@ -118,6 +118,7 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 │   └── launch.json
 │   └── settings.json
 ├── public/
+│   └── assets/
 │   └── favicons/
 │   └── favicon.svg
 │   └── humans.txt
