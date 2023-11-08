@@ -1,0 +1,15 @@
+---
+interface Props {
+  link: string
+  text: string
+}
+
+const { link, text } = Astro.props
+---
+
+<a target='_blank' href={link}>
+  <p
+    class='h-auto w-full rounded-full bg-gradient-to-r from-primary to-secondary px-8 py-3 text-center text-lg font-semibold text-white'>
+    {text}
+  </p>
+</a>

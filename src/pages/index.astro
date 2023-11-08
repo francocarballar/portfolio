@@ -1,7 +1,17 @@
 ---
+import { type About } from '../types/about'
 import Base from '@layouts/Base.astro'
+import AboutMe from '@components/AboutMe.astro'
+
+const about = await Astro.glob<About>('../content/about.md')
 ---
 
 <Base>
-  <h1>Franco Carballar</h1>
+  {
+    about.map(({ frontmatter: { title, subtitle, profile_picture, img_alt, cv }, Content }) => (
+      <AboutMe title={title} subtitle={subtitle} profile_picture={profile_picture} img_alt={img_alt} cv={cv}>
+        <Content />
+      </AboutMe>
+    ))
+  }
 </Base>
