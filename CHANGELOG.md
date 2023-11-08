@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/francocarballar/portfolio/compare/v0.4.0...v0.5.0) (2023-11-08)
+
+
+### Features
+
+* :sparkles: cambia el fondo del sitio web ([27ba927](https://github.com/francocarballar/portfolio/commit/27ba9279a0d1641e657a1dbf544ab3f8e5de409c))
+
+
+
 # [0.4.0](https://github.com/francocarballar/portfolio/compare/v0.3.0...v0.4.0) (2023-11-08)
 
 
