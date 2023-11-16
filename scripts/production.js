@@ -27,7 +27,7 @@ async function production(packageManager) {
 
   let hasError = false
 
-  const command = `${packageManager} install && ${packageManager} run lint && ${packageManager} run build && git checkout main && git merge ${currentBranch} && ${packageManager} install && ${packageManager} run lint && ${packageManager} && git push origin main && git checkout ${previousBranch}`
+  const command = `${packageManager} install && ${packageManager} run lint && ${packageManager} run build && git checkout main && git merge ${currentBranch} && ${packageManager} install && ${packageManager} run lint && ${packageManager} run build && git push origin main --tags && git checkout ${previousBranch}`
 
   const childProcess = exec(command)
 
