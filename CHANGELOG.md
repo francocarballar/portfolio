@@ -1,3 +1,12 @@
+# [0.9.0](https://github.com/francocarballar/portfolio/compare/v0.8.0...v0.9.0) (2023-11-16)
+
+
+### Features
+
+* :bento: actualiza la foto de perfil ([289eb53](https://github.com/francocarballar/portfolio/commit/289eb539c664fa218f02e86e30741b2a8873db2f))
+
+
+
 # [0.8.0](https://github.com/francocarballar/portfolio/compare/v0.7.0...v0.8.0) (2023-11-08)
 
 
