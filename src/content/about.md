@@ -1,7 +1,7 @@
 ---
 title: 'Fullstack Developer'
 subtitle: 'I build things for the web.'
-profile_picture: 'https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/profile-picture/francocarballar'
+profile_picture: 'https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto,c_crop,g_center,h_1540,w_1024/portfolio/profile-picture/francocarballar.jpg'
 img_alt: 'Foto de perfil de Franco Carballar'
 cv: '/pdf/curriculum-vitae.pdf'
 ---
