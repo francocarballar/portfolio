@@ -4,6 +4,7 @@ import { simpleGit } from 'simple-git'
 
 function production(packageManager) {
   let currentBranch
+  let previousBranch
   const git = simpleGit()
   git.branch((err, branchSummary) => {
     if (!err) {
@@ -14,9 +15,18 @@ function production(packageManager) {
     }
   })
 
+  git.raw(['rev-parse', '--abbrev-ref', 'HEAD'], (err, result) => {
+    if (!err) {
+      previousBranch = result.trim()
+      console.log(`⛓️ Rama anterior: ${previousBranch}`)
+    } else {
+      console.error('❌ Ocurrió un error al obtener la rama anterior de Git:', err)
+    }
+  })
+
   let hasError = false
 
-  const command = `${packageManager} install && ${packageManager} run lint && ${packageManager} run build && git checkout main && git merge ${currentBranch} && ${packageManager} install && ${packageManager} run lint && ${packageManager} && git push origin main && git checkout ${currentBranch}`
+  const command = `${packageManager} install && ${packageManager} run lint && ${packageManager} run build && git checkout main && git merge ${previousBranch} && ${packageManager} install && ${packageManager} run lint && ${packageManager} && git push origin main && git checkout ${previousBranch}`
 
   const childProcess = exec(command)
 
