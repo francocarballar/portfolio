@@ -2,31 +2,32 @@ import fs from 'fs'
 import { exec } from 'child_process'
 import { simpleGit } from 'simple-git'
 
-function production(packageManager) {
-  let currentBranch
-  let previousBranch
+async function production(packageManager) {
   const git = simpleGit()
-  git.branch((err, branchSummary) => {
-    if (!err) {
-      currentBranch = branchSummary.current
-      console.log(`⛓️ Rama actual: ${currentBranch}`)
-    } else {
-      console.error('❌ Ocurrió un error al obtener la rama actual de Git:', err)
-    }
-  })
 
-  git.raw(['rev-parse', '--abbrev-ref', 'HEAD'], (err, result) => {
-    if (!err) {
-      previousBranch = result.trim()
-      console.log(`⛓️ Rama anterior: ${previousBranch}`)
-    } else {
-      console.error('❌ Ocurrió un error al obtener la rama anterior de Git:', err)
-    }
-  })
+  let currentBranch
+  try {
+    const branchSummary = await git.branch()
+    currentBranch = branchSummary.current
+    console.log(`⛓️ Rama actual: ${currentBranch}`)
+  } catch (error) {
+    console.error('❌ Ocurrió un error al obtener la rama actual de Git:', error)
+    process.exit(1)
+  }
+
+  let previousBranch
+  try {
+    previousBranch = await git.raw(['rev-parse', '--abbrev-ref', 'HEAD'])
+    previousBranch = previousBranch.trim()
+    console.log(`⛓️ Rama anterior: ${previousBranch}`)
+  } catch (error) {
+    console.error('❌ Ocurrió un error al obtener la rama anterior de Git:', error)
+    process.exit(1)
+  }
 
   let hasError = false
 
-  const command = `${packageManager} install && ${packageManager} run lint && ${packageManager} run build && git checkout main && git merge ${previousBranch} && ${packageManager} install && ${packageManager} run lint && ${packageManager} && git push origin main && git checkout ${previousBranch}`
+  const command = `${packageManager} install && ${packageManager} run lint && ${packageManager} run build && git checkout main && git merge ${currentBranch} && ${packageManager} install && ${packageManager} run lint && ${packageManager} && git push origin main && git checkout ${previousBranch}`
 
   const childProcess = exec(command)
 
