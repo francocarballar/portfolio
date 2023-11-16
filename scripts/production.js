@@ -47,6 +47,7 @@ async function production(packageManager) {
 
   childProcess.on('exit', code => {
     if (code === 0) {
+      hasError = false
       console.log(`\n✅ ${packageManager} se ejecutó exitosamente.\n✅ Todo listo para producción.`)
     } else {
       hasError = true
@@ -54,7 +55,7 @@ async function production(packageManager) {
     }
 
     if (hasError) {
-      console.error('Se ha producido un error. Deteniendo la ejecución.')
+      console.error('❌  Se ha producido un error. Deteniendo la ejecución.')
       process.exit(1)
     }
   })
