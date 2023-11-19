@@ -3,9 +3,53 @@
 @tailwind utilities;
 
 :root {
+  --scroll-size: 10px;
+  --scrollbar-thumb__background-color: rgba(255, 255, 255, .1);
+  --scrollbar-thum__hover: rgba(255, 255, 255, .3);
+  --scrollbar-track__background-color: #111826;
   --gradient-stop-1: #fd0d91;
   --gradient-stop-2: #4412ff;
   --gray-999: #090b11;
+}
+
+*::-webkit-scrollbar {
+  width: var(--scroll-size);
+  height: var(--scroll-size);
+  display: block;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb__background-color);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thum__hover);
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track__background-color);
+  border-radius: 0px;
+}
+
+html::-webkit-scrollbar {
+  width: var(--scroll-size);
+  height: var(--scroll-size);
+  display: block;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb__background-color);
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thum__hover);
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track__background-color);
+  border-radius: 0px;
 }
 
 h2 {
