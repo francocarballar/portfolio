@@ -8,7 +8,7 @@ import { manifest } from './src/utils/manifest'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'http://localhost:4321/',
+  site: 'https://www.francocarballar.com/',
   image: {
     remotePatterns: [
       {
