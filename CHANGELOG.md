@@ -1,3 +1,12 @@
+# [0.10.0](https://github.com/francocarballar/portfolio/compare/v0.9.6...v0.10.0) (2023-11-19)
+
+
+### Features
+
+* :sparkles: agrega la sección "skills" a la página web para mostrar mis habilidades técnicas ([64cd0e0](https://github.com/francocarballar/portfolio/commit/64cd0e03f4d1cc3643c57ced8a620c93640a1337))
+
+
+
 ## [0.9.6](https://github.com/francocarballar/portfolio/compare/v0.9.5...v0.9.6) (2023-11-16)
 
 
