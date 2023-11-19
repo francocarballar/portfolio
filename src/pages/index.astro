@@ -1,9 +1,12 @@
 ---
 import { type About } from '../types/about'
+import { type TypeSkills } from '../types/skills'
 import Base from '@layouts/Base.astro'
 import AboutMe from '@components/AboutMe.astro'
+import Skills from '@components/Skills.astro'
 
 const about = await Astro.glob<About>('../content/about.md')
+const skills = await Astro.glob<TypeSkills>('../content/skills.md')
 ---
 
 <Base>
@@ -12,6 +15,13 @@ const about = await Astro.glob<About>('../content/about.md')
       <AboutMe title={title} subtitle={subtitle} profile_picture={profile_picture} img_alt={img_alt} cv={cv}>
         <Content />
       </AboutMe>
+    ))
+  }
+  {
+    skills.map(({ frontmatter: { stacks }, Content }) => (
+      <Skills stacks={stacks}>
+        <Content />
+      </Skills>
     ))
   }
 </Base>

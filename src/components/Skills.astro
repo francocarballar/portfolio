@@ -1,0 +1,54 @@
+---
+import { type Stack } from '../types/skills'
+
+interface Props {
+  stacks: Stack[]
+}
+
+const { stacks } = Astro.props
+---
+
+<section
+  id='skills'
+  class='mx-auto mt-10 flex min-h-fit w-full max-w-3xl flex-col items-center justify-start gap-5 md:mt-12'>
+  <div class='flex w-full flex-col items-center justify-start gap-6 text-start text-base'>
+    <slot />
+  </div>
+  <div class='flex w-full flex-col items-center justify-center gap-3 overflow-hidden'>
+    <div id='track' class='my-5 flex w-full flex-row flex-nowrap items-center justify-start gap-5'>
+      {
+        stacks.map(stack => (
+          <img
+            src={stack.image}
+            alt={stack.description}
+            title={stack.name}
+            class='h-auto w-14 grayscale hover:filter-none'
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  const track = document.getElementById('track')
+  let translate = 0
+  const imageWidth = 76
+
+  function moveCarousel() {
+    translate -= imageWidth
+
+    if (track !== null && track !== undefined) {
+      if (Math.abs(translate) > track.scrollWidth - track.clientWidth) {
+        track.style.transition = 'none'
+        translate = 0
+        track.style.transform = `translateX(${translate}px)`
+      } else {
+        track.style.transition = 'transform 0.5s ease'
+        track.style.transform = `translateX(${translate}px)`
+      }
+    }
+  }
+
+  setInterval(moveCarousel, 2000)
+</script>

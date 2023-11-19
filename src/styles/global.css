@@ -7,3 +7,23 @@
   --gradient-stop-2: #4412ff;
   --gray-999: #090b11;
 }
+
+h2 {
+  @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-xl font-bold text-transparent sm:text-2xl lg:text-3xl uppercase text-center;
+}
+
+h3 {
+  @apply text-white text-lg font-bold sm:text-xl lg:text-2xl;
+}
+
+h4 {
+  @apply text-base font-semibold text-white sm:text-lg lg:text-xl;
+}
+
+p {
+  @apply text-white text-base;
+}
+
+main ul {
+  @apply ml-10 list-disc text-white text-base w-full leading-relaxed flex flex-col justify-start items-start gap-3;
+}
