@@ -1,3 +1,12 @@
+# [0.12.0](https://github.com/francocarballar/portfolio/compare/v0.11.0...v0.12.0) (2023-11-19)
+
+
+### Features
+
+* :wrench: actualiza el archivo astro.config.mjs con el dominio web correspondiente ([7010e94](https://github.com/francocarballar/portfolio/commit/7010e943eec948a21a2249a58f757e9f0bffc9ce))
+
+
+
 # [0.11.0](https://github.com/francocarballar/portfolio/compare/v0.10.0...v0.11.0) (2023-11-19)
 
 
