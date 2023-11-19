@@ -1,3 +1,12 @@
+# [0.13.0](https://github.com/francocarballar/portfolio/compare/v0.12.0...v0.13.0) (2023-11-19)
+
+
+### Features
+
+* :lipstick: actualiza los estilos del scroll de la página web ([9ef1103](https://github.com/francocarballar/portfolio/commit/9ef11033c30b60e136b56db3aa38ba5c7039af57))
+
+
+
 # [0.12.0](https://github.com/francocarballar/portfolio/compare/v0.11.0...v0.12.0) (2023-11-19)
 
 
