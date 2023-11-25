@@ -68,11 +68,13 @@ import SocialMedia from './SocialMedia.astro'
 <script>
   const navMenu = document.getElementById('nav-menu')
   const nav = document.getElementById('nav')
+  const menuItems = document.querySelectorAll('#nav ul li')
   const openMenu = document.getElementById('show-button')
   const closeMenu = document.getElementById('hide-button')
 
   const open = (): void => {
     if (openMenu !== null && navMenu !== null && closeMenu !== null) {
+      document.body.style.overflow = 'hidden'
       openMenu.classList.remove('flex')
       openMenu.classList.add('hidden')
       closeMenu.classList.remove('hidden')
@@ -84,6 +86,7 @@ import SocialMedia from './SocialMedia.astro'
 
   const close = (): void => {
     if (closeMenu !== null && navMenu !== null && openMenu !== null) {
+      document.body.style.overflow = 'auto'
       closeMenu.classList.remove('flex')
       closeMenu.classList.add('hidden')
       openMenu.classList.remove('hidden')
@@ -92,6 +95,12 @@ import SocialMedia from './SocialMedia.astro'
       navMenu.classList.add('hidden')
     }
   }
+
+  menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      close()
+    })
+  })
 
   const handleClickOutside = (e: MouseEvent) => {
     if (e.target instanceof Node) {
