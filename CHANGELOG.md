@@ -1,3 +1,12 @@
+## [0.13.1](https://github.com/francocarballar/portfolio/compare/v0.13.0...v0.13.1) (2023-11-25)
+
+
+### Bug Fixes
+
+* :bug: corrige el problema con el scroll en el menu de los dispositivos móviles ([473d54d](https://github.com/francocarballar/portfolio/commit/473d54d33c677248736225b82f50cdbffdc462e3))
+
+
+
 # [0.13.0](https://github.com/francocarballar/portfolio/compare/v0.12.0...v0.13.0) (2023-11-19)
 
 
