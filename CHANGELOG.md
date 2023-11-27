@@ -1,3 +1,12 @@
+# [0.17.0](https://github.com/francocarballar/portfolio/compare/v0.16.0...v0.17.0) (2023-11-27)
+
+
+### Features
+
+* :lipstick: actualiza la fuente de los encabezados y del texto ([b109d6d](https://github.com/francocarballar/portfolio/commit/b109d6d5f7c30ac0953fb919928c36eb0da8d9f3))
+
+
+
 # [0.16.0](https://github.com/francocarballar/portfolio/compare/v0.15.0...v0.16.0) (2023-11-27)
 
 
