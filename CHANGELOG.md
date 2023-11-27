@@ -1,3 +1,12 @@
+# [0.18.0](https://github.com/francocarballar/portfolio/compare/v0.17.0...v0.18.0) (2023-11-27)
+
+
+### Features
+
+* :dizzy: agrega una animación suave del scroll al hacer click en un elemento del nav ([caf3656](https://github.com/francocarballar/portfolio/commit/caf3656f733eb99ecffa9631a797bddacc1a0119))
+
+
+
 # [0.17.0](https://github.com/francocarballar/portfolio/compare/v0.16.0...v0.17.0) (2023-11-27)
 
 
