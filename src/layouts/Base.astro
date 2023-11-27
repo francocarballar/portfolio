@@ -79,6 +79,33 @@ const ogImage = createOgImage({
     <script>
       // Add “loaded” class once the document has completely loaded.
       addEventListener('load', () => document.documentElement.classList.add('loaded'))
+
+      document.addEventListener('DOMContentLoaded', function () {
+        // Agrega un evento de clic a todos los enlaces <a> dentro del encabezado
+        const headerLinks = document.querySelectorAll('header nav a')
+        headerLinks.forEach(link => {
+          link.addEventListener('click', (event: Event) => {
+            smoothScroll(event, link)
+          })
+        })
+
+        // Función para realizar un scroll suave
+        const smoothScroll = (event: Event, link: Element) => {
+          event.preventDefault()
+
+          if (link !== null && link !== undefined) {
+            const targetId = link.getAttribute('href')?.substring(1) as string
+            const targetElement = document.getElementById(targetId)
+
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              })
+            }
+          }
+        }
+      })
     </script>
 
     <style>
