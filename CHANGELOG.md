@@ -1,3 +1,12 @@
+# [0.14.0](https://github.com/francocarballar/portfolio/compare/v0.13.1...v0.14.0) (2023-11-27)
+
+
+### Features
+
+* :sparkles: agrega la sección de proyectos personales al portafolio web ([fc5393f](https://github.com/francocarballar/portfolio/commit/fc5393fcdf059d3a4c02b7b3e59e341197d05c72))
+
+
+
 ## [0.13.1](https://github.com/francocarballar/portfolio/compare/v0.13.0...v0.13.1) (2023-11-25)
 
 
