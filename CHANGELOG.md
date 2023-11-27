@@ -1,3 +1,12 @@
+# [0.16.0](https://github.com/francocarballar/portfolio/compare/v0.15.0...v0.16.0) (2023-11-27)
+
+
+### Features
+
+* :lipstick: actualiza los estilos del componente CTA(call to action) ([3ed360e](https://github.com/francocarballar/portfolio/commit/3ed360e9cc420c2c1cb4cfe66f44c2ac486f74c9))
+
+
+
 # [0.15.0](https://github.com/francocarballar/portfolio/compare/v0.14.0...v0.15.0) (2023-11-27)
 
 
