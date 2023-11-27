@@ -133,6 +133,7 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 │   │    └── CTA.astro
 │   │    └── Header.astro
 │   │    └── MenuItems.astro
+│   │    └── Project.astro
 │   │    └── Skills.astro
 │   │    └── SocialMedia.astro
 │   ├── config/
@@ -140,14 +141,31 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 │   │    └── menu.json
 │   │    └── social.json
 │   ├── content/
-│   │    └── about.md
-│   │    └── skills.md
+│   │    ├── about/
+│   │    │     └── about.md
+│   │    ├── projects/
+│   │    │     └── area-fundacional.md
+│   │    │     └── argentina-monetary-quotes-api.md
+│   │    │     └── batatabit.md
+│   │    │     └── biospace.md
+│   │    │     └── calculadora.md
+│   │    │     └── clon-facebook.md
+│   │    │     └── clon-google.md
+│   │    │     └── palabras-en-orden-alfabetico.md
+│   │    │     └── piedra-papel-o-tijera.md
+│   │    │     └── sallet.md
+│   │    │     └── weather-app.md
+│   │    ├── skills/
+│   │    │     └── skills.md
+│   │    └── config.ts
 │   ├── icons/
 │   │    └── CloseIcon.astro
+│   │    └── Github.astro
 │   │    └── HaburgerIcon.astro
 │   │    └── Icon.astro
 │   │    └── IconPaths.ts
 │   │    └── Logo.astro
+│   │    └── Web.astro
 │   ├── layouts/
 │   │    └── Base.astro
 │   ├── pages/
@@ -157,6 +175,7 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 │   ├── types/
 │   │    └── about.d.ts
 │   │    └── menu.d.ts
+│   │    └── projects.d.ts
 │   │    └── skills.d.ts
 │   ├── utils/
 │   │    └── createOgImage.ts
