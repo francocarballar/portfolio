@@ -1,12 +1,17 @@
 ---
 import { type About } from '../types/about'
 import { type TypeSkills } from '../types/skills'
+import { getCollection } from 'astro:content'
 import Base from '@layouts/Base.astro'
 import AboutMe from '@components/AboutMe.astro'
 import Skills from '@components/Skills.astro'
+import Project from '@components/Project.astro'
 
-const about = await Astro.glob<About>('../content/about.md')
-const skills = await Astro.glob<TypeSkills>('../content/skills.md')
+const about = await Astro.glob<About>('../content/about/about.md')
+const skills = await Astro.glob<TypeSkills>('../content/skills/skills.md')
+const projects = await getCollection('projects')
+
+const getInterleavedOrder = (index: number) => (index % 2 === 0 ? 1 : 2)
 ---
 
 <Base>
@@ -17,6 +22,7 @@ const skills = await Astro.glob<TypeSkills>('../content/skills.md')
       </AboutMe>
     ))
   }
+
   {
     skills.map(({ frontmatter: { stacks }, Content }) => (
       <Skills stacks={stacks}>
@@ -24,4 +30,38 @@ const skills = await Astro.glob<TypeSkills>('../content/skills.md')
       </Skills>
     ))
   }
+
+  <section
+    id='projects'
+    class='mx-auto mt-10 flex min-h-fit w-full max-w-3xl flex-col items-center justify-start gap-8 sm:gap-12 md:mt-12'>
+    <h2>Últimos proyectos</h2>
+    {
+      projects
+        .sort((a, b) => a.data.order - b.data.order)
+        .map(
+          async (
+            { data: { name, stack, website, repository, img_alt, img_mobile, img_laptop, img_desktop }, render },
+            index
+          ) => {
+            const Content = await (await render()).Content
+            const order = getInterleavedOrder(index)
+
+            return (
+              <Project
+                order={order}
+                name={name}
+                stack={stack}
+                website={website}
+                repository={repository}
+                img_alt={img_alt}
+                img_mobile={img_mobile}
+                img_laptop={img_laptop}
+                img_desktop={img_desktop}>
+                <Content />
+              </Project>
+            )
+          }
+        )
+    }
+  </section>
 </Base>

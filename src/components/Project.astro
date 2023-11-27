@@ -1,0 +1,63 @@
+---
+import { type TypeProjects } from '../types/projects'
+import Github from '@icons/Github.astro'
+import Web from '@icons/Web.astro'
+
+interface Props extends TypeProjects {}
+
+const { order, name, stack, website, repository, img_alt, img_mobile, img_laptop, img_desktop } = Astro.props
+
+const tabletCSS = `hidden md:inline-block lg:hidden order-${order}`
+const desktopCSS = `relative hidden min-h-full min-w-full lg:inline-block order-${order}`
+---
+
+<article
+  class='grid min-h-full w-full max-w-3xl grid-cols-1 place-items-start gap-5 rounded-2xl border-2 border-gray-700 md:grid-cols-2 md:rounded-none md:border-0 md:border-b-2 md:pb-10'>
+  <!-- Mobile -->
+  <img
+    src={img_laptop}
+    alt={img_alt}
+    class='-z-10 inline-block w-full object-contain object-top md:hidden'
+    loading='lazy'
+  />
+
+  <!-- Tablet -->
+  <img src={img_mobile} alt={img_alt} class={tabletCSS} loading='lazy' />
+
+  <!-- Desktop -->
+  <div class={desktopCSS}>
+    <img src={img_desktop} alt={img_alt} class='absolute left-0 top-0' loading='lazy' />
+    <img
+      src={img_mobile}
+      alt={img_alt}
+      class='absolute right-5 top-36 hidden lg:inline-block'
+      width='100px'
+      height='100%'
+      loading='lazy'
+    />
+  </div>
+
+  <div class='flex w-full flex-col items-start justify-start gap-3 px-8 pb-10 md:pb-0'>
+    <h4 class='text-xl uppercase'>{name}</h4>
+    <slot />
+    <h4 class='text-lg'>Tecnologías</h4>
+    <ul>
+      {stack.map(item => <li>{item}</li>)}
+    </ul>
+    <div class='mt-8 flex w-full flex-row items-center justify-start gap-5'>
+      <a
+        target='_blank'
+        href={repository}
+        class='hiver flex h-auto min-h-[55px] w-full min-w-[55px] max-w-[350px] cursor-pointer flex-col items-center justify-center rounded-full border-2 border-primary bg-transparent text-center text-lg font-semibold text-white transition-all hover:scale-95 hover:bg-gradient-to-r hover:from-primary hover:to-secondary'>
+        <Github />
+      </a>
+
+      <a
+        target='_blank'
+        href={website}
+        class='flex h-auto min-h-[55px] w-full min-w-[55px] max-w-[350px] cursor-pointer flex-col items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary text-center text-lg font-semibold text-white transition-all hover:scale-95 hover:from-secondary hover:to-primary'>
+        <Web />
+      </a>
+    </div>
+  </div>
+</article>
