@@ -6,6 +6,8 @@ delete colors.trueGray
 delete colors.coolGray
 delete colors.blueGray
 
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   darkMode: 'class',
@@ -18,7 +20,11 @@ export default {
       secondary: '#4412FF',
       dark: '#111826'
     },
-    extend: {}
+    extend: {
+      fontFamily: {
+        sans: ['Rubik Variable', ...defaultTheme.fontFamily.sans]
+      }
+    }
   },
   plugins: []
 }
