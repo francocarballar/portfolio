@@ -10,6 +10,17 @@ export const collections = {
       cv: z.string()
     })
   }),
+  works: defineCollection({
+    schema: z.object({
+      order: z.number(),
+      type: z.enum(['job', 'hackathon']),
+      role: z.string(),
+      name: z.string(),
+      start_date: z.string(),
+      finish_date: z.string(),
+      stack: z.array(z.string())
+    })
+  }),
   projects: defineCollection({
     schema: z.object({
       order: z.number(),

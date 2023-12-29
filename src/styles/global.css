@@ -96,3 +96,7 @@ p {
 main ul {
   @apply ml-10 list-disc text-white text-base w-full leading-relaxed flex flex-col justify-start items-start gap-3;
 }
+
+main #works ul {
+  @apply ml-10 list-disc text-white text-base w-auto leading-relaxed flex flex-col justify-start items-start gap-3;
+}

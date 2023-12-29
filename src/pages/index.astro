@@ -6,6 +6,7 @@ import Base from '@layouts/Base.astro'
 import AboutMe from '@components/AboutMe.astro'
 import Skills from '@components/Skills.astro'
 import Project from '@components/Project.astro'
+import Timeline from '@components/Timeline.astro'
 
 const about = await Astro.glob<About>('../content/about/about.md')
 const skills = await Astro.glob<TypeSkills>('../content/skills/skills.md')
@@ -22,6 +23,13 @@ const getInterleavedOrder = (index: number) => (index % 2 === 0 ? 1 : 2)
       </AboutMe>
     ))
   }
+
+  <section
+    id='works'
+    class='mx-auto mt-10 flex min-h-fit w-full max-w-3xl flex-col items-center justify-start gap-8 sm:gap-12 md:mt-12'>
+    <h2>Experiencia</h2>
+    <Timeline />
+  </section>
 
   {
     skills.map(({ frontmatter: { stacks }, Content }) => (

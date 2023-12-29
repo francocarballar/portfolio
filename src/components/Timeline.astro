@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content'
+import Experience from '@components/Experience.astro'
+
+const works = await getCollection('works')
+---
+
+<ol class='relative w-full border-s-2 border-gray-700'>
+  {
+    works.length > 0 &&
+      works
+        .sort((a, b) => b.data.order - a.data.order)
+        .map(async ({ data: { order, type, role, name, start_date, finish_date, stack }, render }) => {
+          const Content = (await render()).Content
+
+          return (
+            <Experience
+              order={order}
+              type={type}
+              role={role}
+              name={name}
+              start_date={start_date}
+              finish_date={finish_date}
+              stack={stack}>
+              <Content />
+            </Experience>
+          )
+        })
+  }
+</ol>

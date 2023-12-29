@@ -1,0 +1,35 @@
+---
+import { type TypeWorks } from 'src/types/works'
+import Work from '@icons/Work.astro'
+import RocketLaunch from '@icons/RocketLaunch.astro'
+
+interface Props extends TypeWorks {}
+
+const { type, role, name, stack, start_date, finish_date } = Astro.props
+const date = start_date === finish_date ? start_date : `${start_date} - ${finish_date}`
+---
+
+<li class='mb-10 ms-12'>
+  <span
+    class='absolute -start-5 flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary ring-8 ring-gray-900'>
+    {type === 'job' ? <Work size={23} /> : <RocketLaunch size={23} />}
+  </span>
+  <h4 class='mb-1 flex items-center text-lg font-semibold text-white md:text-xl'>{role}</h4>
+  <h3 class='mb-2 block items-center text-base font-normal leading-none text-gray-500 md:text-lg'>
+    {name}
+  </h3>
+  <time class='mb-2 block text-sm font-normal leading-none text-gray-500'>{date}</time>
+  <div class='mt-5 flex w-full flex-col items-start justify-start gap-3'>
+    <slot />
+  </div>
+  <div class='mt-4 flex h-auto w-full max-w-max flex-row flex-wrap items-start justify-start gap-1'>
+    {
+      stack.length !== 0 &&
+        stack.map(stack => (
+          <span class='me-2 mt-3 rounded-full bg-gradient-to-r from-primary to-secondary px-2.5 py-0.5 text-xs font-normal text-white'>
+            {stack}
+          </span>
+        ))
+    }
+  </div>
+</li>
