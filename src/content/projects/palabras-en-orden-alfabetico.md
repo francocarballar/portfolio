@@ -1,5 +1,5 @@
 ---
-order: 11
+order: 1
 name: 'Palabras en orden alfabético'
 stack: ['HTML', 'CSS', 'JavaScript']
 website: 'https://francocarballar.github.io/palabras-en-orden-alfabetico/'

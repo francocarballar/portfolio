@@ -45,7 +45,7 @@ const getInterleavedOrder = (index: number) => (index % 2 === 0 ? 1 : 2)
     <h2>Últimos proyectos</h2>
     {
       projects
-        .sort((a, b) => a.data.order - b.data.order)
+        .sort((a, b) => b.data.order - a.data.order)
         .map(
           async (
             { data: { name, stack, website, repository, img_alt, img_mobile, img_laptop, img_desktop }, render },

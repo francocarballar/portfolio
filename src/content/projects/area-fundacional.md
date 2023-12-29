@@ -1,5 +1,5 @@
 ---
-order: 10
+order: 2
 name: 'Área Fundacional de Mendoza'
 stack: ['TypeScript', 'React', 'Vite', 'Flowbite', 'TailwindCSS', 'Eslint']
 website: 'https://area-fundacional-isteec.vercel.app/'

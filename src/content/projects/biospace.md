@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 5
 name: 'Biospace'
 stack: ['Next', 'React', 'Three', 'TailwindCSS', 'CSS', 'Eslint']
 website: 'https://biospace.vercel.app/'

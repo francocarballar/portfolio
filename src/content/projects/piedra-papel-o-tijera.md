@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 7
 name: 'Juego de piedra, papel o tijera'
 stack: ['HTML', 'CSS', 'JavaScript']
 website: 'https://francocarballar.github.io/Juego-Piedra-Papel-o-Tijera/'

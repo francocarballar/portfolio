@@ -1,5 +1,5 @@
 ---
-order: 8
+order: 4
 name: 'Batatabit'
 stack: ['HTML', 'CSS', 'JavaScript']
 website: 'https://francocarballar.github.io/Batatabit/'

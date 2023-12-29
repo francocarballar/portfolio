@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 12
 name: 'Sallet'
 stack: ['TypeScript', 'React', 'Next', 'Ethers', 'ChakraUI', 'PWA']
 website: 'https://www.sallet.app/'
