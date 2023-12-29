@@ -146,9 +146,11 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 │   │    ├── about/
 │   │    │     └── about.md
 │   │    ├── projects/
+│   │    │     └── abiagusturismo.md
 │   │    │     └── area-fundacional.md
 │   │    │     └── argentina-monetary-quotes-api.md
 │   │    │     └── batatabit.md
+│   │    │     └── betrusty.md
 │   │    │     └── biospace.md
 │   │    │     └── calculadora.md
 │   │    │     └── clon-facebook.md

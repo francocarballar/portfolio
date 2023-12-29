@@ -146,9 +146,11 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 │   │    ├── about/
 │   │    │     └── about.md
 │   │    ├── projects/
+│   │    │     └── abiagusturismo.md
 │   │    │     └── area-fundacional.md
 │   │    │     └── argentina-monetary-quotes-api.md
 │   │    │     └── batatabit.md
+│   │    │     └── betrusty.md
 │   │    │     └── biospace.md
 │   │    │     └── calculadora.md
 │   │    │     └── clon-facebook.md
