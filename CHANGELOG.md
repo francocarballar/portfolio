@@ -1,3 +1,12 @@
+# [0.19.0](https://github.com/francocarballar/portfolio/compare/v0.18.0...v0.19.0) (2023-12-29)
+
+
+### Features
+
+* :sparkles: agrega la experiencia profesional al portafolio ([c4d52ec](https://github.com/francocarballar/portfolio/commit/c4d52ec0bfff7eff630a2e27da35ae5c74efe483))
+
+
+
 # [0.18.0](https://github.com/francocarballar/portfolio/compare/v0.17.0...v0.18.0) (2023-11-27)
 
 
