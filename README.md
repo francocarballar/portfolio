@@ -131,11 +131,13 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 │   ├── components/
 │   │    └── AboutMe.astro
 │   │    └── CTA.astro
+│   │    └── Experience.astro
 │   │    └── Header.astro
 │   │    └── MenuItems.astro
 │   │    └── Project.astro
 │   │    └── Skills.astro
 │   │    └── SocialMedia.astro
+│   │    └── Timeline.astro
 │   ├── config/
 │   │    └── config.json
 │   │    └── menu.json
@@ -157,6 +159,14 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 │   │    │     └── weather-app.md
 │   │    ├── skills/
 │   │    │     └── skills.md
+│   │    ├── works/
+│   │    │     └── abiagusturismo.md
+│   │    │     └── bear-builders.md
+│   │    │     └── betrusty.md
+│   │    │     └── ethereum-argentina-2023.md
+│   │    │     └── KOD2.0.md
+│   │    │     └── KOD3.0.md
+│   │    │     └── nasa-space-apps-2022.md
 │   │    └── config.ts
 │   ├── icons/
 │   │    └── CloseIcon.astro
@@ -177,6 +187,7 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 │   │    └── menu.d.ts
 │   │    └── projects.d.ts
 │   │    └── skills.d.ts
+│   │    └── works.d.ts
 │   ├── utils/
 │   │    └── createOgImage.ts
 │   │    └── manifest.ts

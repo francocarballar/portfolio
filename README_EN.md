@@ -131,11 +131,13 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 │   ├── components/
 │   │    └── AboutMe.astro
 │   │    └── CTA.astro
+│   │    └── Experience.astro
 │   │    └── Header.astro
 │   │    └── MenuItems.astro
 │   │    └── Project.astro
 │   │    └── Skills.astro
 │   │    └── SocialMedia.astro
+│   │    └── Timeline.astro
 │   ├── config/
 │   │    └── config.json
 │   │    └── menu.json
@@ -157,6 +159,14 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 │   │    │     └── weather-app.md
 │   │    ├── skills/
 │   │    │     └── skills.md
+│   │    ├── works/
+│   │    │     └── abiagusturismo.md
+│   │    │     └── bear-builders.md
+│   │    │     └── betrusty.md
+│   │    │     └── ethereum-argentina-2023.md
+│   │    │     └── KOD2.0.md
+│   │    │     └── KOD3.0.md
+│   │    │     └── nasa-space-apps-2022.md
 │   │    └── config.ts
 │   ├── icons/
 │   │    └── CloseIcon.astro
@@ -177,6 +187,7 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 │   │    └── menu.d.ts
 │   │    └── projects.d.ts
 │   │    └── skills.d.ts
+│   │    └── works.d.ts
 │   ├── utils/
 │   │    └── createOgImage.ts
 │   │    └── manifest.ts
