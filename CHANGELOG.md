@@ -1,3 +1,7 @@
+# [0.20.0](https://github.com/francocarballar/portfolio/compare/v0.19.0...v0.20.0) (2023-12-29)
+
+
+
 # [0.19.0](https://github.com/francocarballar/portfolio/compare/v0.18.0...v0.19.0) (2023-12-29)
 
 
