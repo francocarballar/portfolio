@@ -1,3 +1,12 @@
+# [0.22.0](https://github.com/francocarballar/portfolio/compare/v0.21.0...v0.22.0) (2023-12-29)
+
+
+### Features
+
+* :sparkles: agrega nuevos proyectos al portafolio ([5683ff4](https://github.com/francocarballar/portfolio/commit/5683ff40aa4722b60da7eee12ed457e2c714f89d))
+
+
+
 # [0.21.0](https://github.com/francocarballar/portfolio/compare/v0.20.0...v0.21.0) (2023-12-29)
 
 
