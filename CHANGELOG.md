@@ -1,3 +1,12 @@
+# [0.21.0](https://github.com/francocarballar/portfolio/compare/v0.20.0...v0.21.0) (2023-12-29)
+
+
+### Features
+
+* :children_crossing: cambia el orden de los items de la navbar para mejorar la navegación ([8079482](https://github.com/francocarballar/portfolio/commit/8079482e43325dea8fbe84a4a737fc43807b3890))
+
+
+
 # [0.20.0](https://github.com/francocarballar/portfolio/compare/v0.19.0...v0.20.0) (2023-12-29)
 
 
