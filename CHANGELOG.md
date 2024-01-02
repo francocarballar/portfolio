@@ -1,3 +1,12 @@
+## [0.27.1](https://github.com/francocarballar/portfolio/compare/v0.27.0...v0.27.1) (2024-01-02)
+
+
+### Bug Fixes
+
+* :bug: corrige el problema al hacer click en los enlaces de redes sociales ([8e95451](https://github.com/francocarballar/portfolio/commit/8e9545138949747d0066b235e317f5e81d432854))
+
+
+
 # [0.27.0](https://github.com/francocarballar/portfolio/compare/v0.26.0...v0.27.0) (2024-01-02)
 
 
