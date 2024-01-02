@@ -38,7 +38,7 @@ const desktopCSS = `relative hidden min-h-full min-w-full lg:inline-block order-
   </div>
 
   <div class='flex w-full flex-col items-start justify-start gap-3 px-8 pb-10 md:pb-0'>
-    <h4 class='text-xl uppercase'>{name}</h4>
+    <h3 class='text-xl uppercase'>{name}</h3>
     <slot />
     <h4 class='text-lg'>Tecnologías</h4>
     <ul>
@@ -48,14 +48,16 @@ const desktopCSS = `relative hidden min-h-full min-w-full lg:inline-block order-
       <a
         target='_blank'
         href={repository}
-        class='hiver flex h-auto min-h-[55px] w-full min-w-[55px] max-w-[350px] cursor-pointer flex-col items-center justify-center rounded-full border-2 border-primary bg-transparent text-center text-lg font-semibold text-white transition-all hover:scale-95 hover:bg-gradient-to-r hover:from-primary hover:to-secondary'>
+        class='hiver flex h-auto min-h-[55px] w-full min-w-[55px] max-w-[350px] cursor-pointer flex-col items-center justify-center rounded-full border-2 border-primary bg-transparent text-center text-lg font-semibold text-white transition-all hover:scale-95 hover:bg-gradient-to-r hover:from-primary hover:to-secondary'
+        aria-label={`Ir al repositorio del proyecto ${name}`}>
         <Github />
       </a>
 
       <a
         target='_blank'
         href={website}
-        class='flex h-auto min-h-[55px] w-full min-w-[55px] max-w-[350px] cursor-pointer flex-col items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary text-center text-lg font-semibold text-white transition-all hover:scale-95 hover:from-secondary hover:to-primary'>
+        class='flex h-auto min-h-[55px] w-full min-w-[55px] max-w-[350px] cursor-pointer flex-col items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary text-center text-lg font-semibold text-white transition-all hover:scale-95 hover:from-secondary hover:to-primary'
+        aria-label={`Ir al sitio web del proyecto ${name}`}>
         <Web />
       </a>
     </div>
