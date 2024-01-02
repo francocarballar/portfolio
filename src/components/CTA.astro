@@ -9,7 +9,8 @@ const { link, text } = Astro.props
 
 <a target='_blank' href={link}>
   <p
-    class='h-auto w-full rounded-full bg-gradient-to-r from-primary to-secondary px-8 py-3 text-center text-lg font-semibold text-white transition-all hover:scale-95 hover:from-secondary hover:to-primary'>
+    class='flex h-auto w-full flex-row items-center justify-center gap-3 rounded-full bg-gradient-to-r from-primary to-secondary px-8 py-3 text-center text-lg font-semibold text-white transition-all hover:scale-95 hover:from-secondary hover:to-primary'>
     {text}
+    <slot />
   </p>
 </a>

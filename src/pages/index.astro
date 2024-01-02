@@ -7,6 +7,7 @@ import AboutMe from '@components/AboutMe.astro'
 import Skills from '@components/Skills.astro'
 import Project from '@components/Project.astro'
 import Timeline from '@components/Timeline.astro'
+import Contact from '@components/Contact.astro'
 
 const about = await Astro.glob<About>('../content/about/about.md')
 const skills = await Astro.glob<TypeSkills>('../content/skills/skills.md')
@@ -51,7 +52,7 @@ const getInterleavedOrder = (index: number) => (index % 2 === 0 ? 1 : 2)
             { data: { name, stack, website, repository, img_alt, img_mobile, img_laptop, img_desktop }, render },
             index
           ) => {
-            const Content = await (await render()).Content
+            const Content = (await render()).Content
             const order = getInterleavedOrder(index)
 
             return (
@@ -71,5 +72,11 @@ const getInterleavedOrder = (index: number) => (index % 2 === 0 ? 1 : 2)
           }
         )
     }
+  </section>
+
+  <section
+    id='contact'
+    class='mx-auto mt-10 flex min-h-fit w-full max-w-3xl flex-col items-center justify-start gap-8 sm:gap-12 md:mt-12'>
+    <Contact />
   </section>
 </Base>
