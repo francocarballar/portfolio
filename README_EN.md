@@ -130,6 +130,7 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 ├── src/
 │   ├── components/
 │   │    └── AboutMe.astro
+│   │    └── Contact.astro
 │   │    └── CTA.astro
 │   │    └── Experience.astro
 │   │    └── Header.astro
@@ -177,7 +178,10 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 │   │    └── Icon.astro
 │   │    └── IconPaths.ts
 │   │    └── Logo.astro
+│   │    └── PaperPlane.astro
+│   │    └── RocketLaunch.astro
 │   │    └── Web.astro
+│   │    └── Work.astro
 │   ├── layouts/
 │   │    └── Base.astro
 │   ├── pages/
