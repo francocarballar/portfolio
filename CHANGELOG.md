@@ -1,3 +1,12 @@
+# [0.24.0](https://github.com/francocarballar/portfolio/compare/v0.23.0...v0.24.0) (2024-01-02)
+
+
+### Features
+
+* :sparkles: agrega la sección de contacto ([6e28823](https://github.com/francocarballar/portfolio/commit/6e288238d7601e71eb96b3c10bdf228c78624430))
+
+
+
 # [0.23.0](https://github.com/francocarballar/portfolio/compare/v0.22.0...v0.23.0) (2023-12-29)
 
 
