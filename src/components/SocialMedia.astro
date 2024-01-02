@@ -4,7 +4,7 @@ import { iconPaths } from '@icons/IconPaths'
 import Icon from '@icons/Icon.astro'
 ---
 
-<ul class='flex flex-row items-center justify-center gap-3' data-justify='end'>
+<div class='flex flex-row items-center justify-center gap-3'>
   {
     social?.networks.map(({ url, icon, name }) => (
       <a href={url} class='text-3xl text-primary hover:text-white' target='_blank'>
@@ -13,4 +13,4 @@ import Icon from '@icons/Icon.astro'
       </a>
     ))
   }
-</ul>
+</div>

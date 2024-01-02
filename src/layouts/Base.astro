@@ -82,7 +82,7 @@ const ogImage = createOgImage({
 
       document.addEventListener('DOMContentLoaded', function () {
         // Agrega un evento de clic a todos los enlaces <a> dentro del encabezado
-        const headerLinks = document.querySelectorAll('header nav a')
+        const headerLinks = document.querySelectorAll('header nav ul li a')
         headerLinks.forEach(link => {
           link.addEventListener('click', (event: Event) => {
             smoothScroll(event, link)
