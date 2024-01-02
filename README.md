@@ -133,6 +133,7 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 │   │    └── Contact.astro
 │   │    └── CTA.astro
 │   │    └── Experience.astro
+│   │    └── Footer.astro
 │   │    └── Header.astro
 │   │    └── MenuItems.astro
 │   │    └── Project.astro
@@ -172,6 +173,7 @@ Para configurar tu portafolio, edita el archivo `src/config/config.json`. Este a
 │   │    │     └── nasa-space-apps-2022.md
 │   │    └── config.ts
 │   ├── icons/
+│   │    └── ArrowTop.astro
 │   │    └── CloseIcon.astro
 │   │    └── Github.astro
 │   │    └── HaburgerIcon.astro

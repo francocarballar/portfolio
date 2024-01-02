@@ -133,6 +133,7 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 │   │    └── Contact.astro
 │   │    └── CTA.astro
 │   │    └── Experience.astro
+│   │    └── Footer.astro
 │   │    └── Header.astro
 │   │    └── MenuItems.astro
 │   │    └── Project.astro
@@ -172,6 +173,7 @@ To configure your portfolio, edit the `src/config/config.json` file. This file c
 │   │    │     └── nasa-space-apps-2022.md
 │   │    └── config.ts
 │   ├── icons/
+│   │    └── ArrowTop.astro
 │   │    └── CloseIcon.astro
 │   │    └── Github.astro
 │   │    └── HaburgerIcon.astro
