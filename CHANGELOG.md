@@ -1,3 +1,12 @@
+# [0.26.0](https://github.com/francocarballar/portfolio/compare/v0.25.0...v0.26.0) (2024-01-02)
+
+
+### Features
+
+* :sparkles: agrega el pie de página al sitio web ([2c96097](https://github.com/francocarballar/portfolio/commit/2c9609785ea4321064ac46e102a607c3d807d718))
+
+
+
 # [0.25.0](https://github.com/francocarballar/portfolio/compare/v0.24.0...v0.25.0) (2024-01-02)
 
 
