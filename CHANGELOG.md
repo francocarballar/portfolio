@@ -1,3 +1,12 @@
+## [0.28.1](https://github.com/francocarballar/portfolio/compare/v0.28.0...v0.28.1) (2024-01-02)
+
+
+### Bug Fixes
+
+* :bug: corrige el error que aparece en la consola del navegador ([bf69b2f](https://github.com/francocarballar/portfolio/commit/bf69b2feca6ff879401b58b34ce9f8b1046d1fe9))
+
+
+
 # [0.28.0](https://github.com/francocarballar/portfolio/compare/v0.27.1...v0.28.0) (2024-01-02)
 
 
