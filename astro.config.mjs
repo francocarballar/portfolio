@@ -3,6 +3,7 @@ import tailwind from '@astrojs/tailwind'
 import Compress from 'astro-compress'
 import sitemap from '@astrojs/sitemap'
 import robotsTxt from 'astro-robots-txt'
+import partytown from '@astrojs/partytown'
 import { VitePWA } from 'vite-plugin-pwa'
 import { manifest } from './src/utils/manifest'
 
@@ -23,7 +24,17 @@ export default defineConfig({
       wrap: true
     }
   },
-  integrations: [Compress(), sitemap(), tailwind(), robotsTxt()],
+  integrations: [
+    Compress(),
+    sitemap(),
+    tailwind(),
+    robotsTxt(),
+    partytown({
+      config: {
+        forward: ['dataLayer.push']
+      }
+    })
+  ],
   vite: {
     plugins: [
       VitePWA({
