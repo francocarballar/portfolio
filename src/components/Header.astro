@@ -20,7 +20,7 @@ import SocialMedia from './SocialMedia.astro'
     {/* Items del la barra de navegación */}
     <ul
       class='text-md mx-auto hidden w-auto max-w-fit list-none items-center justify-start gap-4 rounded-full border-2 border-gray-800 bg-dark px-6 py-3 shadow-md shadow-gray-800 transition-all lg:flex'>
-      {menu?.main?.map(menu => <MenuItems name={menu.name} url={menu.url} />)}
+      {menu?.main?.map(menu => <MenuItems name={menu.name} url={menu.url} id={menu.url} />)}
     </ul>
 
     {/* Redes sociales */}
@@ -54,7 +54,7 @@ import SocialMedia from './SocialMedia.astro'
                 <CloseIcon />
               </label>
               <ul class='flex w-full flex-col items-start justify-start gap-3'>
-                {menu.main?.map(menu => <MenuItems name={menu.name} url={menu.url} />)}
+                {menu.main?.map(menu => <MenuItems name={menu.name} url={menu.url} id={`${menu.url}-mobile`} />)}
               </ul>
             </div>
             <SocialMedia />

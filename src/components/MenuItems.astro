@@ -3,17 +3,17 @@ import { type NavigationLink } from '../types/menu'
 
 interface Props extends NavigationLink {}
 
-const { name, url } = Astro.props
+const { name, url, id } = Astro.props
 ---
 
 <li class='box-border list-none whitespace-nowrap data-[active=true]:font-semibold'>
   <a
-    class='tap-highlight-transparent data-[focus-visible=true]:outline-focus text-foreground active:opacity-disabled relative inline-flex items-center rounded-full py-1 no-underline outline-none transition-all hover:opacity-80 focus:bg-gradient-to-r focus:from-primary focus:to-secondary focus:px-5 data-[focus-visible=true]:z-10 data-[active=true]:bg-gradient-to-r data-[active=true]:from-primary data-[active=true]:to-secondary data-[active=true]:px-5 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2'
+    id={id}
+    href={url}
+    data-active='false'
     aria-current={Astro.url.pathname === url}
     color='foreground'
-    data-active='false'
-    href={url}
-    id={url}>
+    class='tap-highlight-transparent data-[focus-visible=true]:outline-focus text-foreground active:opacity-disabled relative inline-flex items-center rounded-full py-1 no-underline outline-none transition-all hover:opacity-80 focus:bg-gradient-to-r focus:from-primary focus:to-secondary focus:px-5 data-[focus-visible=true]:z-10 data-[active=true]:bg-gradient-to-r data-[active=true]:from-primary data-[active=true]:to-secondary data-[active=true]:px-5 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2'>
     {name}
   </a>
 </li>
