@@ -1,3 +1,12 @@
+# [0.31.0](https://github.com/francocarballar/portfolio/compare/v0.30.0...v0.31.0) (2024-01-04)
+
+
+### Performance Improvements
+
+* :zap: mejora el rendimiento a través de la optimización de imagenes con un CDN ([0dbbfb0](https://github.com/francocarballar/portfolio/commit/0dbbfb0c00a1e04e89a90e96ee1a10f80d38a84f))
+
+
+
 # [0.30.0](https://github.com/francocarballar/portfolio/compare/v0.29.0...v0.30.0) (2024-01-04)
 
 
