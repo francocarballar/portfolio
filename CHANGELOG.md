@@ -1,3 +1,12 @@
+# [0.33.0](https://github.com/francocarballar/portfolio/compare/v0.32.0...v0.33.0) (2024-01-04)
+
+
+### Performance Improvements
+
+* :zap: agrega los atributos width y height a la imagen de mi foto de perfil ([1ecdac7](https://github.com/francocarballar/portfolio/commit/1ecdac7f8e564bc32557cf3101004a4f6c2e7ceb))
+
+
+
 # [0.32.0](https://github.com/francocarballar/portfolio/compare/v0.31.0...v0.32.0) (2024-01-04)
 
 
