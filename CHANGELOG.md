@@ -1,3 +1,12 @@
+## [0.33.1](https://github.com/francocarballar/portfolio/compare/v0.33.0...v0.33.1) (2024-01-04)
+
+
+### Bug Fixes
+
+* :bug: corrige los id duplicados de la barra de navegación ([af1b19f](https://github.com/francocarballar/portfolio/commit/af1b19fc549e5a21a984a14458e19b041e1a0d94))
+
+
+
 # [0.33.0](https://github.com/francocarballar/portfolio/compare/v0.32.0...v0.33.0) (2024-01-04)
 
 
