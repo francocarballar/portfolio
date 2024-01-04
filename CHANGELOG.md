@@ -1,3 +1,12 @@
+# [0.29.0](https://github.com/francocarballar/portfolio/compare/v0.28.1...v0.29.0) (2024-01-04)
+
+
+### Features
+
+* :bento: actualiza el curriculum vitaer ([792fa85](https://github.com/francocarballar/portfolio/commit/792fa8570c16249806122b6633abdff92c2af895))
+
+
+
 ## [0.28.1](https://github.com/francocarballar/portfolio/compare/v0.28.0...v0.28.1) (2024-01-02)
 
 
