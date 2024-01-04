@@ -143,7 +143,7 @@ const MEASUREMENT_ID = import.meta.env.PUBLIC_MEASUREMENT_ID
       }
 
       :root.theme-dark {
-        --bg-image-main: url('/assets/backgrounds/bg-main-dark-800w.jpg');
+        --bg-image-main: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-main-dark-800w');
         --bg-image-main-curves: url('/assets/backgrounds/bg-main-dark.svg');
         --bg-svg-blend-mode: darken;
         --bg-blend-mode: lighten;
@@ -152,34 +152,34 @@ const MEASUREMENT_ID = import.meta.env.PUBLIC_MEASUREMENT_ID
       /* These backgrounds are displayed below the fold, so we lazy load them
 			   once the `.loaded` class has been set.  */
       :root.loaded {
-        --bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-light-800w.jpg');
-        --bg-image-subtle-2: url('/assets/backgrounds/bg-subtle-2-light-800w.jpg');
-        --bg-image-footer: url('/assets/backgrounds/bg-footer-light-800w.jpg');
+        --bg-image-subtle-1: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-subtle-1-light-800w');
+        --bg-image-subtle-2: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-subtle-2-light-800w');
+        --bg-image-footer: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-footer-light-800w');
       }
       :root.loaded.theme-dark {
-        --bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-dark-800w.jpg');
-        --bg-image-subtle-2: url('/assets/backgrounds/bg-subtle-2-dark-800w.jpg');
-        --bg-image-footer: url('/assets/backgrounds/bg-footer-dark-800w.jpg');
+        --bg-image-subtle-1: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-subtle-1-dark-800w');
+        --bg-image-subtle-2: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-subtle-2-dark-800w');
+        --bg-image-footer: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-footer-dark-800w');
       }
 
       @media (min-width: 50em) {
         :root {
           --bg-scale: 1;
-          --bg-image-main: url('/assets/backgrounds/bg-main-light-1440w.jpg');
+          --bg-image-main: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-main-light-1440w');
         }
         :root.theme-dark {
-          --bg-image-main: url('/assets/backgrounds/bg-main-dark-1440w.jpg');
+          --bg-image-main: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-main-dark-1440w');
         }
 
         :root.loaded {
-          --bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-light-1440w.jpg');
-          --bg-image-subtle-2: url('/assets/backgrounds/bg-subtle-2-light-1440w.jpg');
-          --bg-image-footer: url('/assets/backgrounds/bg-footer-light-1440w.jpg');
+          --bg-image-subtle-1: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-subtle-1-light-1440w');
+          --bg-image-subtle-2: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-subtle-2-light-1440w');
+          --bg-image-footer: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-footer-light-1440w');
         }
         :root.loaded.theme-dark {
-          --bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-dark-1440w.jpg');
-          --bg-image-subtle-2: url('/assets/backgrounds/bg-subtle-2-dark-1440w.jpg');
-          --bg-image-footer: url('/assets/backgrounds/bg-footer-dark-1440w.jpg');
+          --bg-image-subtle-1: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-subtle-1-dark-1440w');
+          --bg-image-subtle-2: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-subtle-2-dark-1440w');
+          --bg-image-footer: url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/bg-footer-dark-1440w');
         }
       }
 
@@ -188,7 +188,8 @@ const MEASUREMENT_ID = import.meta.env.PUBLIC_MEASUREMENT_ID
         isolation: isolate;
         background:
 					/*noise*/
-          url('/assets/backgrounds/noise.png') top center/220px repeat,
+          url('https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/backgrounds/noise')
+            top center/220px repeat,
           /*footer*/ var(--bg-image-footer) bottom center/var(--bg-gradient-size) no-repeat,
           /*header1*/ var(--bg-image-main-curves) top center/var(--bg-gradient-size) no-repeat,
           /*header2*/ var(--bg-image-main) top center/var(--bg-gradient-size) no-repeat,
