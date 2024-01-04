@@ -1,3 +1,12 @@
+# [0.30.0](https://github.com/francocarballar/portfolio/compare/v0.29.0...v0.30.0) (2024-01-04)
+
+
+### Features
+
+* :chart_with_upwards_trend: agrega google analytics al portafolio ([056c34d](https://github.com/francocarballar/portfolio/commit/056c34d5b76681abb1182e2854995d810af549f6))
+
+
+
 # [0.29.0](https://github.com/francocarballar/portfolio/compare/v0.28.1...v0.29.0) (2024-01-04)
 
 
