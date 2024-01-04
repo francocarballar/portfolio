@@ -1,3 +1,12 @@
+# [0.32.0](https://github.com/francocarballar/portfolio/compare/v0.31.0...v0.32.0) (2024-01-04)
+
+
+### Performance Improvements
+
+* :zap: mejora el rendmiento agregando los atributos width y height a las imagenes ([f8e05f2](https://github.com/francocarballar/portfolio/commit/f8e05f27f03bbee7494d11e7ffdde053b5b38d70))
+
+
+
 # [0.31.0](https://github.com/francocarballar/portfolio/compare/v0.30.0...v0.31.0) (2024-01-04)
 
 
