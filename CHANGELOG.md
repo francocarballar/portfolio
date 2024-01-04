@@ -1,3 +1,12 @@
+# [0.34.0](https://github.com/francocarballar/portfolio/compare/v0.33.1...v0.34.0) (2024-01-04)
+
+
+### Performance Improvements
+
+* :zap: actualiza el alto de la imagen principal ([2ae20d6](https://github.com/francocarballar/portfolio/commit/2ae20d6a971af8ea122a6bfe482e92f594a56fdb))
+
+
+
 ## [0.33.1](https://github.com/francocarballar/portfolio/compare/v0.33.0...v0.33.1) (2024-01-04)
 
 
