@@ -1,3 +1,12 @@
+# [0.36.0](https://github.com/francocarballar/portfolio/compare/v0.35.0...v0.36.0) (2024-03-15)
+
+
+### Performance Improvements
+
+* :zap: mejora el rendmiento modificando el atributos height en la foto del AboutMe.astro ([f875cd7](https://github.com/francocarballar/portfolio/commit/f875cd755e9bf166c471beb6cde71a3e9ae594c4))
+
+
+
 # [0.35.0](https://github.com/francocarballar/portfolio/compare/v0.34.0...v0.35.0) (2024-01-04)
 
 
