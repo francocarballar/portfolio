@@ -1,3 +1,12 @@
+# [0.37.0](https://github.com/francocarballar/portfolio/compare/v0.36.0...v0.37.0) (2024-03-15)
+
+
+### Performance Improvements
+
+* :zap: optimiza las imagenes a través de lazy loading y con el componente Image de Astro ([0497930](https://github.com/francocarballar/portfolio/commit/04979306a4bc72b594519a36f3f1bf24067d9af9))
+
+
+
 # [0.36.0](https://github.com/francocarballar/portfolio/compare/v0.35.0...v0.36.0) (2024-03-15)
 
 
