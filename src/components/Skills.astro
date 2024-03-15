@@ -1,5 +1,6 @@
 ---
 import { type Stack } from '../types/skills'
+import { Image } from 'astro:assets'
 
 interface Props {
   stacks: Stack[]
@@ -18,13 +19,15 @@ const { stacks } = Astro.props
     <div id='track' class='my-5 flex w-full flex-row flex-nowrap items-center justify-start gap-5'>
       {
         stacks.map(stack => (
-          <img
+          <Image
             src={stack.image}
             alt={stack.description}
             title={stack.name}
-            width='3.5rem'
-            height='3.5rem'
+            width='56'
+            height='56'
             class='h-auto w-14 grayscale hover:filter-none'
+            decoding='async'
+            loading='lazy'
           />
         ))
       }
