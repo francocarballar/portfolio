@@ -1,3 +1,12 @@
+## [0.37.1](https://github.com/francocarballar/portfolio/compare/v0.37.0...v0.37.1) (2024-03-15)
+
+
+### Bug Fixes
+
+* :mute: elimina un console.log() ([ba1ae46](https://github.com/francocarballar/portfolio/commit/ba1ae46c96e65570ca3e337b5c09c870e88738fa))
+
+
+
 # [0.37.0](https://github.com/francocarballar/portfolio/compare/v0.36.0...v0.37.0) (2024-03-15)
 
 
