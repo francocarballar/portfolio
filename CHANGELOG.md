@@ -1,3 +1,12 @@
+# [0.38.0](https://github.com/francocarballar/portfolio/compare/v0.37.1...v0.38.0) (2024-10-26)
+
+
+### Features
+
+* :speech_balloon: actualiza el titulo del trabajo y el enlace al sitio web de BeTrusty ([49dba4c](https://github.com/francocarballar/portfolio/commit/49dba4ce46d68853e8f855a1da7f248f5d40a7aa))
+
+
+
 ## [0.37.1](https://github.com/francocarballar/portfolio/compare/v0.37.0...v0.37.1) (2024-03-15)
 
 
