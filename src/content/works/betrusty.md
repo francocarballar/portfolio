@@ -1,7 +1,7 @@
 ---
 order: 6
 type: 'job'
-role: 'Chief Technology Officer - CTO'
+role: 'Co-founder & CTO at BeTrusty'
 name: 'BeTrusty'
 start_date: 'Febrero del 2023'
 finish_date: 'Actualidad'

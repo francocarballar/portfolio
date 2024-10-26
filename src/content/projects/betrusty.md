@@ -2,7 +2,7 @@
 order: 13
 name: 'BeTrusty'
 stack: ['TypeScript', 'Node', 'Express', 'Next', 'React', 'Firebase', 'TailwindCSS', 'Eslint', 'Prettier']
-website: 'https://app.betrusty.io/'
+website: 'https://app.betrusty.io/search'
 repository: 'https://github.com/betrusty/app/'
 img_alt: 'Imagen de la interfaz de usuario de la aplicación web de la empresa BeTrusty'
 img_mobile: 'https://res.cloudinary.com/francocarballar/image/upload/f_auto,q_auto/v1/portfolio/projects/betrusty/chdrmddoc0sy6huwfuwu'
